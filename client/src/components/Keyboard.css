@@ -1,0 +1,24 @@
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.key {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.key:hover:not(:disabled) {
+  background-color: #bbb;
+}
+
+.key.guessed {
+  background-color: #999;
+  color: #666;
+}
+
